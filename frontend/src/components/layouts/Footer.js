@@ -1,26 +1,29 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+// import logo from "../../assets/icons/payment.png";
 
 const Footer = () => {
   return (
     <div className="copyright__wrapper py-2">
       <Container>
         <Row>
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <Col lg={6} md={6} sm={12}>
             <div className="copyright">
               <div className="copy__right__inner text-left">
                 <p>
                   Copyright <i className="fa fa-copyright"></i>{" "}
-                  <a href="">E-Commerce.</a> All Rights Reserved
+                  <Link to="/">E-Commerce.</Link>
+                  All Rights Reserved
                 </p>
               </div>
             </div>
-          </div>
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          </Col>
+          <Col lg={6} md={6} sm={12}>
             <div className="payment text-right">
-              <img src="assets/icons/payment.png" alt="" />
+              <img alt="" src={require("../../assets/icons/payment.png")} />
             </div>
-          </div>
+          </Col>
         </Row>
       </Container>
     </div>
