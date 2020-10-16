@@ -1,0 +1,9 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.hero {
+  min-height: calc(100% - 124px);
+}
