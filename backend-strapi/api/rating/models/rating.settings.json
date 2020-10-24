@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ratings",
+  "info": {
+    "name": "rating",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "product": {
+      "model": "products",
+      "via": "ratings"
+    },
+    "Rating": {
+      "type": "float"
+    }
+  }
+}
